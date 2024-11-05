@@ -1,0 +1,266 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeSource Blood Bank - Home</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+        .header-section {
+            background-color: #d32f2f;
+            padding: 90px 0px;
+            color: white;
+        }
+        .header-section h1 {
+          margin-bottom:40px;
+           font-size:40px;
+            color:white;
+        }
+        .intro-section {
+            padding: 80px 0;
+            {% comment %} background-image: url('{% static "image/blood.png" %}'); {% endcomment %}
+            background-color:#c32d22;
+            background-size: cover;
+            background-position: center;
+            color: black;
+            font-family:sans-serif;
+        }
+        .features-section {
+            padding: 40px 0;
+        }
+        .features-section .feature {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .features-section .feature:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+        .about-section {
+          background: #f9f9f9;
+          padding: 40px 20px;
+          border-radius: 8px;
+          
+      }
+      .about-content{
+        align-items:justify;
+      }
+      .section-title {
+          font-size: 2rem;
+          color: #c0392b;
+          font-weight: bold;
+          
+          margin-bottom: 20px;
+      }
+      
+      .about-description {
+          font-size: 1.2rem;
+          color: #666;
+          margin-bottom: 20px;
+          font-style: italic;
+      }
+      
+      .about-content {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #333;
+          margin-bottom: 40px;
+      }
+      
+      .vision-mission {
+          margin-top: 30px;
+      }
+      
+      .vision-box, .mission-box {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 8px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .vision-box:hover, .mission-box:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+      
+      .vision-box h3, .mission-box h3 {
+          font-size: 1.5rem;
+          color: #c0392b;
+          font-weight: bold;
+          margin-bottom: 15px;
+      }
+      
+      .vision-box p, .mission-box p {
+          font-size: 1rem;
+          color: #555;
+          line-height: 1.6;
+      }
+      
+        .contact-section {
+            padding: 60px 0px;
+    
+
+        }
+        .contact-section h1 {
+        font-size: 2rem;
+        color: #c0392b;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        }
+        .contact-section .p{
+              font-family:calibri;
+              padding:30px;
+              margin-left:30px;
+              gap:40px;
+        }
+        .contact-section h4{
+            font-size:1.5rem;
+            text-transform: uppercase;
+        margin-bottom: 20px;
+
+
+        }
+
+        .footer-section {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-section .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-section .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    {% include "blood/navbar.html" %}
+
+    <!-- Header Section -->
+    <section class="header-section text-center">
+      
+        <h1> Welcome  to LifeSource Blood Bank</h1>
+        <h5>Save Lives by Donating Blood</h5>
+        <p>  Your trusted source for life-saving blood donations.</p>
+          <p>Become a donor and make a difference. Check your eligibility, register as a donor, and help us provide blood to those in need.</p>
+         <h5>Become a Donor</h5>
+    </section>
+
+    <!-- Introduction Section -->
+   
+
+    <!-- Features Section (Do not alter this as per request) -->
+    <section class="features-section text-center">
+        <div class="container">
+            <h2 class="mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature bg-light p-4">
+                        <i class="fas fa-hand-holding-heart fa-3x text-danger mb-3"></i>
+                        <h4>Blood Donation Camps</h4>
+                        <p>Organizing regular blood donation camps to support hospitals and emergency needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature bg-light p-4">
+                        <i class="fas fa-users fa-3x text-danger mb-3"></i>
+                        <h5>Donor & Patient Registration</h5>
+                        <p>Easy registration for both donors and patients.Track your donation history and eligibility status.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature bg-light p-4">
+                        <i class="fas fa-hospital fa-3x text-danger mb-3"></i>
+                        <h4>Blood Availability Status</h4>
+                        <p>Check the availability of different blood types instantly to fulfill urgent requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+      <div class="container text-center">
+          <h2 class="section-title">About LifeSource Blood Bank</h2>
+          <p class="about-description">
+              <em>
+                  Bridging the gap between those who need blood and those who can donate </em>
+                  <em>LifeSource Blood Bank is committed to saving lives.  </em>
+          </p>
+          <div class="about-content">
+              <p>
+                  LifeSource Blood Bank is a non-profit organization dedicated to ensuring that no life is lost due to a lack of available blood. </p>
+               <p> Our mission is to create a seamless, efficient, and reliable blood donation network accessible to all.
+              </p>
+              <p>
+                  We partner with hospitals, medical institutions, and community organizations to maintain a safe blood supply. Using our advanced system, we quickly match donors with recipients and keep track of blood stocks.
+              </p>
+          </div>
+          
+          <div class="row vision-mission">
+              <div class="col-md-6" style="padding:30px">
+                  <div class="vision-box shadow">
+                      <h3>Our Vision</h3>
+                      <p>A world where everyone has access to safe, affordable blood whenever it’s needed.</p>
+                  </div>
+              </div>
+              <div class="col-md-6" style="padding:30px">
+                  <div class="mission-box shadow">
+                      <h3>Our Mission</h3>
+                      <p>To save lives by connecting donors with those in need, raising awareness, and making blood donation simple and efficient.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- Contact Section -->
+    <section class="contact-section text-center">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p style="color:black;font-size:18px" class="p">If you have any questions, need support, or would like more information about our services,<br> please feel free to reach out to us. We are here to assist you in any way we can.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Email</h4>
+                    <p><a href="mailto:support@LifeSourcebloodbank.com">support@LifeSourcebloodbank.com</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Phone</h4>
+                    <p><strong>Main Line:</strong> 9825463922</p>
+                    <p><strong>Support:</strong>   7652936203</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Address</h4>
+                    <p>123 Blood Bank Avenue, Cityville, Country</p>
+                    <p>Monday - Saturday: 9 AM - 5 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+   
+
+    {% include "blood/footer.html" %}
+
+</body>
+</html>
